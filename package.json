@@ -14,7 +14,7 @@
     "lint": "prettier . --check --cache && eslint . --cache && stylelint \"**/*.{css,scss}\" --cache",
     "lint:fix": "prettier . --write --cache && eslint . --fix --cache && stylelint \"**/*.{css,scss}\" --cache --fix",
     "ng": "ng",
-    "serve": "ng serve",
+    "serve": "ng serve --port 3000",
     "serve:ssr": "bun run build && node dist/angular-sandbox/server/server.mjs"
   },
   "dependencies": {
