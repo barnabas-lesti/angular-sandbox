@@ -2,10 +2,10 @@
   "name": "angular-sandbox",
   "version": "0.0.1",
   "type": "module",
-  "packageManager": "npm@10.7.0",
+  "packageManager": "bun@1.1.0",
   "engines": {
     "node": ">=18.20.0",
-    "npm": ">=10.7.0"
+    "bun": ">=1.1.0"
   },
   "scripts": {
     "build": "ng build",
@@ -14,7 +14,7 @@
     "lint:fix": "prettier . --write --cache && eslint . --fix --cache && stylelint \"**/*.{css,scss}\" --cache --fix",
     "ng": "ng",
     "serve": "ng serve",
-    "serve:ssr": "npm run build && node dist/angular-sandbox/server/server.mjs"
+    "serve:ssr": "bun run build && node dist/angular-sandbox/server/server.mjs"
   },
   "dependencies": {
     "@angular/animations": "^18.1.0",
