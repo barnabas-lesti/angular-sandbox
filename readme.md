@@ -13,6 +13,8 @@ Angular practice and example project.
   - To commit changes, can be skipped if you just want to check out the app.
 - [Bun](https://bun.sh/)
   - A more faster package manager and script runner.
+- [Angular CLI](https://angular.io/cli)
+  - Angular CLI task runner.
 - [Visual Studio Code](https://code.visualstudio.com/)
   - Other IDE can be used of course, but there are added settings for VSCode in the project.
   - Once the project is opened in VSCode, install the recommended extensions.
