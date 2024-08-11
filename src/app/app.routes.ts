@@ -1,3 +1,3 @@
 import { type Routes } from "@angular/router";
 
-export const routes: Routes = [];
+export const appRoutes: Routes = [];
