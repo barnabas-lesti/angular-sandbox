@@ -50,3 +50,8 @@ To summarize the above, to do actual work we only need to:
 1. Install dependencies with `bun i`.
 2. Start the specific resources in development mode with `bun run dev`.
 3. Open the application in the browser.
+
+### Documentation
+
+- [Conventions](./docs/conventions.md)
+- [Resources](./docs/resources.md)
