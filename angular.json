@@ -32,7 +32,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["@angular/material/prebuilt-themes/azure-blue.css", "src/design-system/index.scss"],
+            "styles": ["@angular/material/prebuilt-themes/azure-blue.css", "src/app/design-system/index.scss"],
             "scripts": [],
             "server": "src/main.server.ts",
             "prerender": true,
@@ -91,7 +91,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["@angular/material/prebuilt-themes/azure-blue.css", "src/design-system/index.scss"],
+            "styles": ["@angular/material/prebuilt-themes/azure-blue.css", "src/app/design-system/index.scss"],
             "scripts": []
           }
         }
