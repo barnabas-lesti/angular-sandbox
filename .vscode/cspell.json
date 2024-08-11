@@ -1,6 +1,10 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["devkit", "stylelint"],
+  "words": [
+    "devkit",
+    "prerender",
+    "stylelint"
+  ],
   "flagWords": []
 }
