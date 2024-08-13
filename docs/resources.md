@@ -2,7 +2,6 @@
 
 - https://eslint.org/docs/v8.x/
 - https://prettier.io/docs/en/
-- https://stylelint.io/
 - https://bun.sh/docs/cli/pm
 - https://preline.co/templates/admin/index.html
 

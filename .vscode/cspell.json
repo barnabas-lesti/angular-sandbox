@@ -1,16 +1,6 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [
-    "Aniry",
-    "devkit",
-    "fontawesome",
-    "fortawesome",
-    "Lesti",
-    "preline",
-    "prerender",
-    "stylelint",
-    "tailwindcss"
-  ],
+  "words": ["Aniry", "devkit", "fontawesome", "fortawesome", "Lesti", "preline", "prerender", "tailwindcss"],
   "flagWords": []
 }

@@ -11,8 +11,8 @@
   "scripts": {
     "build": "ng build",
     "clean": "git clean -Xfd",
-    "lint": "prettier . --check --cache && eslint . --cache && stylelint \"**/*.css\" --cache",
-    "lint:fix": "prettier . --write --cache && eslint . --fix --cache && stylelint \"**/*.css\" --cache --fix",
+    "lint": "prettier . --check --cache && eslint . --cache",
+    "lint:fix": "prettier . --write --cache && eslint . --fix --cache",
     "ng": "ng",
     "serve": "ng serve --port 3000",
     "serve:ssr": "bun run build && node dist/angular-sandbox/server/server.mjs"
@@ -54,8 +54,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "postcss": "^8.4.41",
     "prettier": "^3.3.3",
-    "stylelint": "^16.3.1",
-    "stylelint-config-standard": "^36.0.1",
     "tailwindcss": "^3.4.9",
     "typescript": "^5.5.2"
   }
