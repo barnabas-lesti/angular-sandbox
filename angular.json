@@ -32,7 +32,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/design-system/index.css"],
+            "styles": ["src/app/design-system/index.css"],
             "scripts": [],
             "server": "src/index.server.ts",
             "prerender": true,
@@ -91,7 +91,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/design-system/index.css"],
+            "styles": ["src/app/design-system/index.css"],
             "scripts": []
           }
         }

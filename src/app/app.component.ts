@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
-import { PrivateLayoutComponent } from "@src/design-system";
+import { PrivateLayoutComponent } from "@app/design-system";
 
 @Component({
   selector: "app-root",
