@@ -1,1 +1,1 @@
-export { DashboardPage } from "./dashboard.page";
+export { DASHBOARD_ROUTES } from "./dashboard.routes";

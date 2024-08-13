@@ -1,3 +1,3 @@
 export { AppComponent } from "./app.component";
-export { appConfig } from "./app.config";
-export { appServerConfig } from "./app.server.config";
+export { APP_CONFIG } from "./app.config";
+export { APP_SERVER_CONFIG } from "./app.server.config";
