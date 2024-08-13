@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+
+import { SidebarListItemComponent } from "./sidebar-list-item/sidebar-list-item.component";
+import { BrandLinkComponent } from "../brand-link/brand-link.component";
 
 @Component({
-  selector: 'app-sidebar',
+  selector: "app-sidebar",
   standalone: true,
-  imports: [],
-  templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+  imports: [BrandLinkComponent, SidebarListItemComponent],
+  templateUrl: "./sidebar.component.html",
 })
-export class SidebarComponent {
-
-}
+export class SidebarComponent {}

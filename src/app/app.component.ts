@@ -9,6 +9,4 @@ import { PrivateLayoutComponent } from "@app/design-system";
   imports: [RouterOutlet, PrivateLayoutComponent],
   templateUrl: "./app.component.html",
 })
-export class AppComponent {
-  title = "Angular Sandbox";
-}
+export class AppComponent {}

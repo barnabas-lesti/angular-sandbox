@@ -33,7 +33,7 @@
               }
             ],
             "styles": ["src/app/design-system/index.css"],
-            "scripts": [],
+            "scripts": ["node_modules/preline/preline.js"],
             "server": "src/index.server.ts",
             "prerender": true,
             "ssr": {

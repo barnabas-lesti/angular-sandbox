@@ -1,6 +1,14 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["devkit", "prerender", "stylelint", "tailwindcss"],
+  "words": [
+    "Aniry",
+    "devkit",
+    "Lesti",
+    "preline",
+    "prerender",
+    "stylelint",
+    "tailwindcss"
+  ],
   "flagWords": []
 }
