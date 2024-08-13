@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
-import { ButtonComponent } from "./design-system";
+import { PrivateLayoutComponent } from "@src/design-system";
 
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, ButtonComponent],
+  imports: [RouterOutlet, PrivateLayoutComponent],
   templateUrl: "./app.component.html",
 })
 export class AppComponent {

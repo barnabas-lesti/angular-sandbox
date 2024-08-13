@@ -11,8 +11,8 @@
   "scripts": {
     "build": "ng build",
     "clean": "git clean -Xfd",
-    "lint": "prettier . --check --cache && eslint . --cache && stylelint \"**/*.{css,scss}\" --cache",
-    "lint:fix": "prettier . --write --cache && eslint . --fix --cache && stylelint \"**/*.{css,scss}\" --cache --fix",
+    "lint": "prettier . --check --cache && eslint . --cache && stylelint \"**/*.css\" --cache",
+    "lint:fix": "prettier . --write --cache && eslint . --fix --cache && stylelint \"**/*.css\" --cache --fix",
     "ng": "ng",
     "serve": "ng serve --port 3000",
     "serve:ssr": "bun run build && node dist/angular-sandbox/server/server.mjs"
@@ -24,7 +24,6 @@
     "@angular/compiler": "^18.1.0",
     "@angular/core": "^18.1.0",
     "@angular/forms": "^18.1.0",
-    "@angular/material": "^18.1.4",
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/platform-server": "^18.1.0",
@@ -45,13 +44,16 @@
     "@types/node": "^18.18.0",
     "@typescript-eslint/eslint-plugin": "^7.16.1",
     "@typescript-eslint/parser": "^7.16.1",
+    "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-rxjs": "^5.0.3",
     "eslint-plugin-simple-import-sort": "^12.1.1",
+    "postcss": "^8.4.41",
     "prettier": "^3.3.3",
     "stylelint": "^16.3.1",
-    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "tailwindcss": "^3.4.9",
     "typescript": "^5.5.2"
   }
 }

@@ -4,7 +4,7 @@
 - https://prettier.io/docs/en/
 - https://stylelint.io/
 - https://bun.sh/docs/cli/pm
-- https://material.angular.io/components/
+- https://preline.co/templates/admin/index.html
 
 # Articles and blogs
 

@@ -34,10 +34,13 @@ module.exports = {
     "simple-import-sort/imports": [
       "error",
       {
-        groups: [["^@?\\w"], [`^@app?\\w`], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
+        groups: [["^@?\\w"], [`^@src?\\w`], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
       },
     ],
     "simple-import-sort/exports": "error",
+
+    // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin
+    "@angular-eslint/component-class-suffix": ["error", { suffixes: ["Component", "Container", "Page"] }],
   },
   overrides: [
     {

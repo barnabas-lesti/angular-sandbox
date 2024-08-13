@@ -13,8 +13,7 @@
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
   "css.validate": false,
-  "scss.validate": false,
-  "stylelint.validate": ["css", "scss"],
+  "stylelint.validate": ["css"],
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.updateImportsOnFileMove.enabled": "never"
 }
