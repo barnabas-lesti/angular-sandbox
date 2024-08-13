@@ -1,3 +1,11 @@
-<app-private-layout>
-  <router-outlet />
-</app-private-layout>
+<app-header />
+
+<app-breadcrumb />
+
+<app-sidebar [props]="sidebarProps" />
+
+<div class="w-full lg:ps-64">
+  <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
+    <router-outlet />
+  </div>
+</div>

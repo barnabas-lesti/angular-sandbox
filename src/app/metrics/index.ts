@@ -1,1 +1,1 @@
-export { METRICS_ROUTES } from "./metrics.routes";
+export { METRICS_ROUTES, METRICS_SIDEBAR_ITEMS } from "./metrics.routes";

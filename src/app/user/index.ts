@@ -1,1 +1,1 @@
-export { USER_ROUTES } from "./user.routes";
+export { USER_ROUTES, USER_SIDEBAR_ITEMS } from "./user.routes";

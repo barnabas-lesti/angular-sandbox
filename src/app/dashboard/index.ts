@@ -1,1 +1,1 @@
-export { DASHBOARD_ROUTES } from "./dashboard.routes";
+export { DASHBOARD_ROUTES, DASHBOARD_SIDEBAR_ITEMS } from "./dashboard.routes";

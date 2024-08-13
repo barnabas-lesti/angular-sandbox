@@ -1,6 +1,8 @@
 import {
   faBars,
   faBell,
+  faCalculator,
+  faChartLine,
   faChevronDown,
   faChevronRight,
   faChevronUp,
@@ -16,4 +18,6 @@ export const AVAILABLE_ICONS = {
   bell: faBell,
   download: faDownload,
   user: faUser,
+  lineChart: faChartLine,
+  calculator: faCalculator,
 };

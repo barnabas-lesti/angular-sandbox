@@ -7,7 +7,7 @@
 >
   <div class="relative flex flex-col h-full max-h-full">
     <div class="px-6 pt-4">
-      <app-brand-link></app-brand-link>
+      <app-brand-link />
     </div>
 
     <div
@@ -18,9 +18,9 @@
         data-hs-accordion-always-open
       >
         <ul class="flex flex-col space-y-1">
-          <app-sidebar-list-item></app-sidebar-list-item>
-          <app-sidebar-list-item></app-sidebar-list-item>
-          <app-sidebar-list-item></app-sidebar-list-item>
+          @for (item of props.items; track item.label) {
+            <app-sidebar-item [props]="item" />
+          }
         </ul>
       </nav>
     </div>

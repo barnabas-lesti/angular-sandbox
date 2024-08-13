@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 
-import { IconComponent } from "../../../icon/icon.component";
+import { IconComponent } from "../../icon/icon.component";
 
 @Component({
   selector: "app-breadcrumb-list-item",
