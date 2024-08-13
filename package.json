@@ -29,6 +29,8 @@
     "@angular/platform-server": "^18.1.0",
     "@angular/router": "^18.1.0",
     "@angular/ssr": "^18.1.4",
+    "@fortawesome/angular-fontawesome": "^0.15.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "express": "^4.18.2",
     "preline": "^2.4.1",
     "rxjs": "^7.8.0",
