@@ -1,4 +1,4 @@
-import { type IconName } from "../../icon/icon.types";
+import { type IconName } from "../../icon";
 
 export interface SidebarItem {
   icon: IconName;

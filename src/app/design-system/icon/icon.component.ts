@@ -14,7 +14,6 @@ import { type IconName, type IconSize } from "./icon.types";
   standalone: true,
   imports: [FontAwesomeModule],
   templateUrl: "./icon.component.html",
-  styleUrl: "./icon.component.css",
 })
 export class IconComponent {
   @Input() name!: IconName;

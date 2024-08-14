@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 import { HeaderProfileComponent } from "./header-profile/header-profile.component";
-import { BrandLinkComponent } from "../brand-link/brand-link.component";
+import { BrandLinkComponent } from "../brand-link";
 
 @Component({
   selector: "app-header-component",
