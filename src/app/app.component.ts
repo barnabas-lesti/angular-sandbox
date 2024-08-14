@@ -1,7 +1,13 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
-import { BreadcrumbComponent, HeaderComponent, SidebarComponent, type SidebarItem } from "@app/design-system";
+import {
+  BreadcrumbComponent,
+  HeaderComponent,
+  NotificationContainer,
+  SidebarComponent,
+  type SidebarItem,
+} from "@app/design-system";
 
 import { APP_SIDEBAR_ITEMS } from "./app.routes";
 
@@ -11,7 +17,7 @@ import { APP_SIDEBAR_ITEMS } from "./app.routes";
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, BreadcrumbComponent, HeaderComponent, SidebarComponent],
+  imports: [RouterOutlet, BreadcrumbComponent, HeaderComponent, SidebarComponent, NotificationContainer],
   templateUrl: "./app.component.html",
 })
 export class AppComponent {
