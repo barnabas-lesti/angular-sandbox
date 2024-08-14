@@ -10,4 +10,6 @@
   </div>
 </div>
 
-<app-notification-container />
+@defer (on idle) {
+  <app-notification-container />
+}
