@@ -28,7 +28,7 @@ module.exports = {
     "no-console": ["error", { allow: ["debug", "warn", "error"] }],
 
     // https://typescript-eslint.io/rules/
-    "@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
+    // "@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
 
     // https://github.com/lydell/eslint-plugin-simple-import-sort
     "simple-import-sort/imports": [

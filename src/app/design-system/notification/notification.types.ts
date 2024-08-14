@@ -1,6 +1,6 @@
-export interface Notification {
-  label: string;
+export interface NotificationArgs {
+  content: string;
   type?: NotificationType;
 }
 
-type NotificationType = "info" | "success" | "warning" | "error";
+export type NotificationType = "info" | "success" | "warning" | "error";
