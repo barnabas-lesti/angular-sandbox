@@ -6,7 +6,7 @@ import { IconComponent } from "../../icon/icon.component";
 import { SidebarItemToggleComponent } from "../sidebar-item-toggle/sidebar-item-toggle.component";
 
 @Component({
-  selector: "app-sidebar-item",
+  selector: "app-sidebar-item-component",
   standalone: true,
   imports: [RouterLink, RouterLinkActive, IconComponent, SidebarItemToggleComponent],
   templateUrl: "./sidebar-item.component.html",

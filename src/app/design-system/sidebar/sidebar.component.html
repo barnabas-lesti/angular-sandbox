@@ -7,7 +7,7 @@
 >
   <div class="relative flex flex-col h-full max-h-full">
     <div class="px-6 pt-4">
-      <app-brand-link />
+      <app-brand-link-component />
     </div>
 
     <div
@@ -19,7 +19,7 @@
       >
         <ul class="flex flex-col space-y-1">
           @for (item of items; track item.label) {
-            <app-sidebar-item [item]="item" />
+            <app-sidebar-item-component [item]="item" />
           }
         </ul>
       </nav>

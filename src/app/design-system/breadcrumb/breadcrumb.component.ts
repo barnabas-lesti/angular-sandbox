@@ -4,7 +4,7 @@ import { BreadcrumbListItemComponent } from "./breadcrumb-list-item/breadcrumb-l
 import { SidebarToggleComponent } from "./sidebar-toggle/sidebar-toggle.component";
 
 @Component({
-  selector: "app-breadcrumb",
+  selector: "app-breadcrumb-component",
   standalone: true,
   imports: [SidebarToggleComponent, BreadcrumbListItemComponent],
   templateUrl: "./breadcrumb.component.html",

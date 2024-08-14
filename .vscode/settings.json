@@ -11,6 +11,7 @@
   },
   "editor.formatOnSave": true,
   "eslint.format.enable": true,
+  "css.validate": false,
   "typescript.updateImportsOnFileMove.enabled": "never",
   "javascript.updateImportsOnFileMove.enabled": "never"
 }

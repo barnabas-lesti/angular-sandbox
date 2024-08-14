@@ -4,7 +4,7 @@ import { HeaderProfileComponent } from "./header-profile/header-profile.componen
 import { BrandLinkComponent } from "../brand-link/brand-link.component";
 
 @Component({
-  selector: "app-header",
+  selector: "app-header-component",
   standalone: true,
   imports: [HeaderProfileComponent, BrandLinkComponent],
   templateUrl: "./header.component.html",

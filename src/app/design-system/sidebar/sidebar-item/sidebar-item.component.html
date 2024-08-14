@@ -9,10 +9,10 @@
     aria-controls="users-accordion-child"
     [routerLink]="item.route.path"
   >
-    <app-icon [name]="item.icon"></app-icon>
+    <app-icon-component [name]="item.icon" />
     {{ item.label }}
 
-    <app-sidebar-item-toggle class="ms-auto" />
+    <app-sidebar-item-toggle-component class="ms-auto" />
   </button>
 
   <div
@@ -37,7 +37,7 @@
         >
           Sub Menu 1
 
-          <app-sidebar-item-toggle class="ms-auto" />
+          <app-sidebar-item-toggle-component class="ms-auto" />
         </button>
 
         <div
