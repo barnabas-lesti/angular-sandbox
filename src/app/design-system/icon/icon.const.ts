@@ -6,6 +6,8 @@ import {
   faChevronDown,
   faChevronRight,
   faChevronUp,
+  faCircleInfo,
+  faClose,
   faDownload,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -20,4 +22,6 @@ export const AVAILABLE_ICONS = {
   user: faUser,
   lineChart: faChartLine,
   calculator: faCalculator,
+  info: faCircleInfo,
+  close: faClose,
 };
