@@ -1,6 +1,6 @@
 import { type IconName } from "../../icon/icon.types";
 
-export interface SidebarItemProps {
+export interface SidebarItem {
   icon: IconName;
   label: string;
   route: {
@@ -8,5 +8,5 @@ export interface SidebarItemProps {
     query?: { [key: string]: string };
     fragment?: string;
   };
-  children?: Omit<SidebarItemProps, "icon">[];
+  children?: Omit<SidebarItem, "icon">[];
 }

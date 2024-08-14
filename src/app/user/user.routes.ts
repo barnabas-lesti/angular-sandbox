@@ -1,6 +1,6 @@
 import { type Routes } from "@angular/router";
 
-import { type SidebarItemProps } from "@app/design-system";
+import { type SidebarItem } from "@app/design-system";
 
 export const USER_ROUTES: Routes = [
   { path: "profile", loadComponent: () => import("./profile/profile.page").then(({ ProfilePage }) => ProfilePage) },
@@ -8,7 +8,7 @@ export const USER_ROUTES: Routes = [
   { path: "user/profile", redirectTo: "/profile" },
 ];
 
-export const USER_SIDEBAR_ITEMS: SidebarItemProps[] = [
+export const USER_SIDEBAR_ITEMS: SidebarItem[] = [
   {
     label: "Profile",
     icon: "user",

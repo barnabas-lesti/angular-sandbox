@@ -3,5 +3,4 @@ export { ButtonComponent } from "./button/button.component";
 export { HeaderComponent } from "./header/header.component";
 export { IconComponent } from "./icon/icon.component";
 export { SidebarComponent } from "./sidebar/sidebar.component";
-export { SidebarProps } from "./sidebar/sidebar.types";
-export { SidebarItemProps } from "./sidebar/sidebar-item/sidebar-item.types";
+export { SidebarItem } from "./sidebar/sidebar-item/sidebar-item.types";

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { RouterOutlet } from "@angular/router";
 
-import { BreadcrumbComponent, HeaderComponent, SidebarComponent, type SidebarProps } from "@app/design-system";
+import { BreadcrumbComponent, HeaderComponent, SidebarComponent, type SidebarItem } from "@app/design-system";
 
 import { APP_SIDEBAR_ITEMS } from "./app.routes";
 
@@ -15,11 +15,9 @@ import { APP_SIDEBAR_ITEMS } from "./app.routes";
   templateUrl: "./app.component.html",
 })
 export class AppComponent {
-  readonly sidebarProps: SidebarProps;
+  readonly sidebarItems: SidebarItem[];
 
   constructor() {
-    this.sidebarProps = {
-      items: APP_SIDEBAR_ITEMS,
-    };
+    this.sidebarItems = APP_SIDEBAR_ITEMS;
   }
 }

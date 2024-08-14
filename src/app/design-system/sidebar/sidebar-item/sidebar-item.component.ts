@@ -1,7 +1,7 @@
 import { Component, Input } from "@angular/core";
 import { RouterLink, RouterLinkActive } from "@angular/router";
 
-import { type SidebarItemProps } from "./sidebar-item.types";
+import { type SidebarItem } from "./sidebar-item.types";
 import { IconComponent } from "../../icon/icon.component";
 import { SidebarItemToggleComponent } from "../sidebar-item-toggle/sidebar-item-toggle.component";
 
@@ -12,5 +12,5 @@ import { SidebarItemToggleComponent } from "../sidebar-item-toggle/sidebar-item-
   templateUrl: "./sidebar-item.component.html",
 })
 export class SidebarItemComponent {
-  @Input() props!: SidebarItemProps;
+  @Input() item!: SidebarItem;
 }
