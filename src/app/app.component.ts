@@ -4,6 +4,7 @@ import { RouterOutlet } from "@angular/router";
 import {
   BreadcrumbComponent,
   HeaderComponent,
+  ModalContainer,
   NotificationContainer,
   SidebarComponent,
   type SidebarItem,
@@ -17,7 +18,14 @@ import { APP_SIDEBAR_ITEMS } from "./app.routes";
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, BreadcrumbComponent, HeaderComponent, SidebarComponent, NotificationContainer],
+  imports: [
+    RouterOutlet,
+    BreadcrumbComponent,
+    HeaderComponent,
+    SidebarComponent,
+    NotificationContainer,
+    ModalContainer,
+  ],
   templateUrl: "./app.component.html",
 })
 export class AppComponent {
