@@ -1,15 +1,17 @@
-<app-header-component />
+<div class="bg-gray-50 dark:bg-neutral-900">
+  <app-header-container />
 
-<app-breadcrumb-component />
+  <app-breadcrumb-component />
 
-<app-sidebar-component [items]="sidebarItems" />
+  <app-sidebar-component [items]="sidebarItems" />
 
-<div class="w-full lg:ps-64">
-  <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
-    <router-outlet />
+  <div class="w-full lg:ps-64">
+    <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
+      <router-outlet />
+    </div>
   </div>
-</div>
 
-@defer (on idle) {
-  <app-notification-container />
-}
+  @defer (on idle) {
+    <app-notification-container />
+  }
+</div>

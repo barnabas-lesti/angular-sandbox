@@ -9,6 +9,8 @@ import {
   faCircleInfo,
   faClose,
   faDownload,
+  faMoon,
+  faSun,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -24,4 +26,6 @@ export const AVAILABLE_ICONS = {
   calculator: faCalculator,
   info: faCircleInfo,
   close: faClose,
+  lightTheme: faSun,
+  darkTheme: faMoon,
 };

@@ -3,7 +3,7 @@ import { RouterOutlet } from "@angular/router";
 
 import {
   BreadcrumbComponent,
-  HeaderComponent,
+  HeaderContainer,
   NotificationContainer,
   SidebarComponent,
   type SidebarItem,
@@ -17,7 +17,7 @@ import { APP_SIDEBAR_ITEMS } from "./app.routes";
 @Component({
   selector: "app-root",
   standalone: true,
-  imports: [RouterOutlet, BreadcrumbComponent, HeaderComponent, SidebarComponent, NotificationContainer],
+  imports: [RouterOutlet, BreadcrumbComponent, HeaderContainer, SidebarComponent, NotificationContainer],
   templateUrl: "./app.component.html",
 })
 export class AppComponent {
