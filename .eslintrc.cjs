@@ -40,7 +40,7 @@ module.exports = {
     "simple-import-sort/exports": "error",
 
     // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin
-    "@angular-eslint/component-class-suffix": ["error", { suffixes: ["Component", "Container", "Page"] }],
+    "@angular-eslint/component-class-suffix": ["error", { suffixes: ["Component", "Container", "Page", "Modal"] }],
   },
   overrides: [
     {

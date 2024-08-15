@@ -1,12 +1,12 @@
 import { Component, EventEmitter, Input, Output } from "@angular/core";
 
 @Component({
-  selector: "app-modal-container",
+  selector: "app-modal-shell-component",
   standalone: true,
   imports: [],
-  templateUrl: "./modal.container.html",
+  templateUrl: "./modal-shell.component.html",
 })
-export class ModalContainer {
+export class ModalShellComponent {
   @Input() title?: string;
 
   @Output() confirm = new EventEmitter<void>();

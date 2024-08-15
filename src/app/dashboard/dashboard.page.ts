@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 import { ModalService } from "@app/design-system";
 
-import { TestModal1Component } from "./test-modal-1.component";
+import { Test1Modal } from "./test-1.modal";
 
 @Component({
   selector: "app-dashboard-page",
@@ -14,6 +14,6 @@ export class DashboardPage {
   constructor(private modalService: ModalService) {}
 
   onRandomButtonClick() {
-    this.modalService.openModal(TestModal1Component);
+    this.modalService.openModal(Test1Modal);
   }
 }
