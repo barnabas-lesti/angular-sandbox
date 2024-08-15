@@ -14,7 +14,7 @@ export class NotificationComponent {
   @Input() id!: string;
   @Input() type?: NotificationType = DEFAULT_NOTIFICATION_TYPE;
 
-  @Output() delete: EventEmitter<string> = new EventEmitter();
+  @Output() delete = new EventEmitter<string>();
 
   get typeClass(): string {
     switch (this.type) {
