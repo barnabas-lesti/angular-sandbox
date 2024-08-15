@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 import { ModalService, ModalShellComponent } from "@app/design-system";
 
-import { Test2Modal } from "./test-2.modal";
+import { Test2Modal } from "../test-2/test-2.modal";
 
 @Component({
   selector: "app-test-1-modal",
