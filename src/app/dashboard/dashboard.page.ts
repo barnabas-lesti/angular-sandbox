@@ -2,6 +2,8 @@ import { Component } from "@angular/core";
 
 import { ModalService } from "@app/design-system";
 
+import { TestModal1Component } from "./test-modal-1.component";
+
 @Component({
   selector: "app-dashboard-page",
   standalone: true,
@@ -10,8 +12,8 @@ import { ModalService } from "@app/design-system";
 })
 export class DashboardPage {
   constructor(private modalService: ModalService) {}
-  openModal() {
-    void this.modalService;
-    console.debug("open modal");
+
+  onRandomButtonClick() {
+    this.modalService.openModal(TestModal1Component);
   }
 }
