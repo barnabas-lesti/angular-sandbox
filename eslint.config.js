@@ -55,22 +55,6 @@ export default typescriptEslint.config(
       "@typescript-eslint/no-empty-function": ["error", { allow: ["private-constructors"] }],
 
       // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin/docs/rules
-      "@angular-eslint/directive-selector": [
-        "error",
-        {
-          type: "attribute",
-          prefix: "app",
-          style: "camelCase",
-        },
-      ],
-      "@angular-eslint/component-selector": [
-        "error",
-        {
-          type: "element",
-          prefix: "app",
-          style: "kebab-case",
-        },
-      ],
       "@angular-eslint/component-class-suffix": ["error", { suffixes: ["Component", "Container", "Page", "Modal"] }],
 
       // https://github.com/lydell/eslint-plugin-simple-import-sort
@@ -95,6 +79,27 @@ export default typescriptEslint.config(
     rules: {
       // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin-template/docs/rules
       "@angular-eslint/template/prefer-self-closing-tags": "error",
+    },
+  },
+  {
+    files: ["apps/client/**/*.ts"],
+    rules: {
+      "@angular-eslint/directive-selector": [
+        "error",
+        {
+          type: "attribute",
+          prefix: "asac",
+          style: "camelCase",
+        },
+      ],
+      "@angular-eslint/component-selector": [
+        "error",
+        {
+          type: "element",
+          prefix: "asac",
+          style: "kebab-case",
+        },
+      ],
     },
   },
   eslintConfigPrettier,
