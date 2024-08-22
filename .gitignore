@@ -1,4 +1,1 @@
-/node_modules
-.eslintcache
-/.angular/cache
-/dist
+node_modules/
