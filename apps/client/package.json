@@ -8,5 +8,8 @@
     "start": "ng serve",
     "start:ssr": "node dist/app/server/server.mjs",
     "test": "jest --collect-coverage"
+  },
+  "dependencies": {
+    "@as-packages/core": "*"
   }
 }

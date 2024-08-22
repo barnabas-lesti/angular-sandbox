@@ -1,6 +1,15 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["asac", "compat", "devkit", "lintignore", "prerender"],
+  "words": [
+    "asac",
+    "aspc",
+    "compat",
+    "devkit",
+    "fesm",
+    "lintignore",
+    "packagr",
+    "prerender"
+  ],
   "flagWords": []
 }
