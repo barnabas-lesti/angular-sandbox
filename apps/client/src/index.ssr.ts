@@ -1,10 +1,11 @@
-import { APP_BASE_HREF } from "@angular/common";
-import { CommonEngine } from "@angular/ssr";
 import express from "express";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-import bootstrap from "./src/main.server";
+import { APP_BASE_HREF } from "@angular/common";
+import { CommonEngine } from "@angular/ssr";
+
+import bootstrap from "./index.server";
 
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {

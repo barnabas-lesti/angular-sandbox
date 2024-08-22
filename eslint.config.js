@@ -61,7 +61,7 @@ export default typescriptEslint.config(
       "simple-import-sort/imports": [
         "error",
         {
-          groups: [["^@?\\w"], [`^@src?\\w`], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
+          groups: [["^@?\\w"], [`^@as?\\w`], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
         },
       ],
       "simple-import-sort/exports": "error",

@@ -3,12 +3,18 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [""]
+      "outputs": [".angular/**", "dist/**"]
     },
-    "serve": {
+    "start": {
       "cache": false,
       "persistent": true,
       "dependsOn": ["^build"]
-    }
+    },
+    "start:ssr": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["build"]
+    },
+    "test": {}
   }
 }
