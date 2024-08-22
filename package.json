@@ -1,0 +1,32 @@
+{
+  "name": "@ngs/root",
+  "version": "0.0.1",
+  "description": "Angular sandbox monorepo.",
+  "type": "module",
+  "packageManager": "npm@10.5.0",
+  "engines": {
+    "node": ">=18.20.0",
+    "npm": ">=10.5.0"
+  },
+  "scripts": {
+    "clean": "git clean -Xfd",
+    "lint": "npm run lint.format -- --check && npm run lint.eslint",
+    "lint.format": "prettier . --cache --ignore-path .lintignore",
+    "lint.eslint": "eslint . --cache",
+    "lint:fix": "npm run lint.format -- --write && npm run lint.eslint -- --fix",
+    "ng": "ng"
+  },
+  "devDependencies": {
+    "@angular/cli": "^18.2.1",
+    "@eslint/compat": "^1.1.1",
+    "@types/node": "^22.5.0",
+    "angular-eslint": "^18.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsdoc": "^50.2.2",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unused-imports": "^4.1.3",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.2.0"
+  }
+}

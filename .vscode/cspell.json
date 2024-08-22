@@ -1,6 +1,9 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": [],
+  "words": [
+    "compat",
+    "lintignore"
+  ],
   "flagWords": []
 }
