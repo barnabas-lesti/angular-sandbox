@@ -1,6 +1,18 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["Aniry", "devkit", "fontawesome", "fortawesome", "Lesti", "preline", "prerender", "tailwindcss"],
+  "words": [
+    "Angulars",
+    "asac",
+    "aspc",
+    "compat",
+    "devkit",
+    "fesm",
+    "lintignore",
+    "packagr",
+    "prerender",
+    "Turborepo",
+    "Turborepos"
+  ],
   "flagWords": []
 }

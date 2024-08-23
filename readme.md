@@ -1,57 +1,44 @@
-# Angular Sandbox
+# Angular Turborepo Example
 
-Angular practice and example project.
+An example project to demonstrate how [Angular](https://angular.dev/overview) and [Turborepo](https://turbo.build/repo/docs) can work together.
 
-## Getting started
+Angulars best friend is [Nx](https://nx.dev/getting-started/installation), however it is possible to make it work with Turborepo and utilize it's benefits.
 
-### Prerequisites
+## Prerequisites
 
 - [NodeJS](https://nodejs.org/)
   - This will also install `npm`, make sure both are added to the `path` and available in terminal.
   - It is a good idea to use [NVM](https://github.com/nvm-sh/nvm) (Node Version Manager) to manage NodeJS. It can easily help to switch NodeJS versions when working in multiple repositories.
 - [Git](https://git-scm.com/)
   - To commit changes, can be skipped if you just want to check out the app.
-- [Bun](https://bun.sh/)
-  - A more faster package manager and script runner.
-- [Angular CLI](https://angular.io/cli)
-  - Angular CLI task runner.
 - [Visual Studio Code](https://code.visualstudio.com/)
   - Other IDE can be used of course, but there are added settings for VSCode in the project.
   - Once the project is opened in VSCode, install the recommended extensions.
 
-### Development
+## Overview
 
-#### Good to know
+There are 3 core workspaces in the project:
 
-- All commands should be executed from the root of the project, no directory jumping should be required.
-- Try restarting the extension host or reloading the window if:
-  - VSCode shows errors after specific script runs (like installing dependencies, building resources, etc.),
-  - Script runs fail with permission issues or they throw other errors.
+- [apps](./apps) - Applications (right now only one, the `client`).
+- [libs](./libs) - Libraries (that are used to build the applications).
+- [tools](./tools) - Tooling like `tsconfig`-s, etc.
 
-#### Project setup
+With this, we can utilize Turborepos caching and task dependency manager features. In the [turbo.json](./turbo.json) file, we have the configurations for what script is required for another one and what to cache.
 
-- Run `bun i` to install required dependencies.
-  - Use `bun i package-name` to install a new dependency.
-  - Flags like `--save-dev` can be used of course.
-- The `bun run clean` can be used to remove generated resources (build outputs, caches, etc.) in case there are errors during development or we just want to have a clean repository without the need to clone it again.
-- Linting and formatting should be automatically handled by VSCode, however the `bun run lint` (only check) and `bun run lint:fix` (checks and also fixes errors where possible) commands can be used to manually lint the project.
+Apart from the above, we have Prettier and Eslint integrated too. These are set up in the root of the repo for the whole project, but these could also be moved per module level.
 
-#### Running and building resources
+## Development
 
-- To write code and check the changes the `bun run serve` command can be used.
-  - This starts application development servers with hot module replacement and reload.
-- We can use the `bun run build` command to build all resources in the project. This in most cases shouldn't be needed, because what scripts need built resources, those will automatically run the build command.
-- The `bun run serve:ssr` scripts builds and starts the main app server using production configuration (minification, chunking, etc.). It can be useful to locally check performance and to be sure nothing broke when more complex changes were implemented.
+- First step is to install the project dependencies with `npm i`.
+  - Right now, every dependency is in the root [package.json](./package.json) file. If needed, the different modules can have diverging dependencies where they for example require a different version of a global package, this can be set in the modules package.json file without a problem.
+- Because right now there's only one application, we can just use the `npm run start` script to start that single application.
+  - If in the future there will be more applications, we can use Turborepos filtering functionality to only start what we want.
+  - By starting the application, Turbo also knows (because of the turbo.json configuration) that it first needs to build the depending libraries (defined in the applications package.json file).
+- If we want to make changes to a library, we can start the `npm run build:watch` script that will automatically rebuild the libraries where we made changes. This will also reload the application that we previously started.
 
-#### Summary
+### Summary
 
-To summarize the above, to do actual work we only need to:
-
-1. Install dependencies with `bun i`.
-2. Start the specific resources in development mode with `bun run dev`.
-3. Open the application in the browser.
-
-### Documentation
-
-- [Conventions](./docs/conventions.md)
-- [Resources](./docs/resources.md)
+1. Install dependencies with `npm i`.
+2. Start the client application with `npm run start`.
+3. Start the library builds in watch mode with `npm run build:watch`.
+4. Have fun!

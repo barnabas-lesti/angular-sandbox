@@ -1,0 +1,7 @@
+.angular/
+.turbo/
+dist/
+node_modules/
+coverage/
+
+.eslintcache

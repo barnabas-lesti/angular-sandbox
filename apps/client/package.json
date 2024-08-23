@@ -1,0 +1,17 @@
+{
+  "name": "@ate-apps/client",
+  "type": "module",
+  "scripts": {
+    "build": "ng build",
+    "start": "ng serve",
+    "start:ssr": "node ./dist/app/server/server.mjs",
+    "test": "jest --collect-coverage"
+  },
+  "dependencies": {
+    "@ate-libs/core": "*",
+    "@ate-libs/ui": "*"
+  },
+  "devDependencies": {
+    "@ate-tools/tsconfig": "*"
+  }
+}
