@@ -1,10 +1,9 @@
 {
-  "name": "@as-packages/core",
-  "version": "0.0.0",
+  "name": "@ate/core",
   "scripts": {
     "build": "ng build && rimraf dist/package.json"
   },
-  "module": "dist/fesm2022/as-packages-core.mjs",
+  "module": "dist/fesm2022/ate-core.mjs",
   "types": "dist/index.d.ts",
   "peerDependencies": {
     "@angular/common": "^18.2.0",

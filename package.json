@@ -1,5 +1,5 @@
 {
-  "name": "@as/root",
+  "name": "@ate/root",
   "version": "0.0.1",
   "description": "Angular sandbox monorepo.",
   "type": "module",

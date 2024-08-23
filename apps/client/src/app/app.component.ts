@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { PlatformService } from "@as-packages/core";
+import { PlatformService } from "@ate/core";
 
 @Component({
   selector: "asac-root",

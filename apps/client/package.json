@@ -1,6 +1,5 @@
 {
-  "name": "@as-app/client",
-  "version": "0.0.1",
+  "name": "@ate/client",
   "type": "module",
   "scripts": {
     "ng": "ng",
@@ -10,6 +9,6 @@
     "test": "jest --collect-coverage"
   },
   "dependencies": {
-    "@as-packages/core": "*"
+    "@ate/core": "*"
   }
 }
