@@ -1,0 +1,15 @@
+{
+  "name": "@ate-libs/ui",
+  "scripts": {
+    "build": "ng build && rimraf ./dist/package.json"
+  },
+  "module": "./dist/fesm2022/ate-libs-ui.mjs",
+  "types": "./dist/index.d.ts",
+  "peerDependencies": {
+    "@angular/common": "^18.2.0",
+    "@angular/core": "^18.2.0"
+  },
+  "devDependencies": {
+    "@ate-tools/tsconfig": "*"
+  }
+}

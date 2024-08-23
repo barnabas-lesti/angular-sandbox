@@ -1,0 +1,3 @@
+{
+  "extends": "@ate-tools/tsconfig/tsconfig.base.json"
+}

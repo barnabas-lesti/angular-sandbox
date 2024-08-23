@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { filter, Observable, of } from "rxjs";
 
-console.debug("@ate/core", "platform.service.ts");
+console.debug("@ate-libs/core", "platform.service.ts");
 
 /**
  * Service to check the current platform.
@@ -11,7 +11,7 @@ console.debug("@ate/core", "platform.service.ts");
 })
 export class PlatformService {
   constructor() {
-    console.debug("@ate/core", "PlatformService", "constructor");
+    console.debug("@ate-libs/core", "PlatformService", "constructor");
   }
 
   /**
