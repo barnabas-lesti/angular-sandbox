@@ -1,6 +1,18 @@
 {
   "version": "0.2",
   "language": "en",
-  "words": ["asac", "aspc", "compat", "devkit", "fesm", "lintignore", "packagr", "prerender"],
+  "words": [
+    "Angulars",
+    "asac",
+    "aspc",
+    "compat",
+    "devkit",
+    "fesm",
+    "lintignore",
+    "packagr",
+    "prerender",
+    "Turborepo",
+    "Turborepos"
+  ],
   "flagWords": []
 }
