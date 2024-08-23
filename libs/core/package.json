@@ -1,15 +1,15 @@
 {
-  "name": "@ate/core",
+  "name": "@ate-libs/core",
   "scripts": {
-    "build": "ng build && rimraf dist/package.json"
+    "build": "ng build && rimraf ./dist/package.json"
   },
-  "module": "./dist/fesm2022/ate-core.mjs",
+  "module": "./dist/fesm2022/ate-libs-core.mjs",
   "types": "./dist/index.d.ts",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0"
   },
   "devDependencies": {
-    "@ate/tsconfig": "*"
+    "@ate-tools/tsconfig": "*"
   }
 }

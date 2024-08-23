@@ -1,7 +1,7 @@
 import { merge, Subscription, tap } from "rxjs";
 
 import { Component, OnDestroy, OnInit } from "@angular/core";
-import { PlatformService } from "@ate/core";
+import { PlatformService } from "@ate-libs/core";
 
 console.debug("@ate/client", "app.component.ts");
 

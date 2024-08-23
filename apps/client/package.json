@@ -1,5 +1,5 @@
 {
-  "name": "@ate/client",
+  "name": "@ate-apps/client",
   "type": "module",
   "scripts": {
     "ng": "ng",
@@ -9,9 +9,9 @@
     "test": "jest --collect-coverage"
   },
   "dependencies": {
-    "@ate/core": "*"
+    "@ate-libs/core": "*"
   },
   "devDependencies": {
-    "@ate/tsconfig": "*"
+    "@ate-tools/tsconfig": "*"
   }
 }
