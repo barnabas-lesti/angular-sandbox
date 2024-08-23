@@ -1,7 +1,8 @@
 {
   "name": "@ate-libs/ui",
   "scripts": {
-    "build": "ng build && rimraf ./dist/package.json"
+    "build": "ng build",
+    "dev": "ng build --watch"
   },
   "module": "./dist/fesm2022/ate-libs-ui.mjs",
   "types": "./dist/index.d.ts",

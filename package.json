@@ -11,17 +11,17 @@
   "workspaces": [
     "apps/**",
     "libs/**",
-    "tools/**"
+    "tools/**",
+    "!**/dist"
   ],
   "scripts": {
     "build": "turbo build",
+    "dev": "turbo dev",
     "clean": "git clean -Xfd",
     "lint": "npm run lint.format -- --check && npm run lint.eslint",
     "lint.format": "prettier . --cache --ignore-path ./.lintignore",
     "lint.eslint": "eslint . --cache",
     "lint:fix": "npm run lint.format -- --write && npm run lint.eslint -- --fix",
-    "start": "turbo start",
-    "start:ssr": "turbo start:ssr",
     "test": "turbo test"
   },
   "dependencies": {

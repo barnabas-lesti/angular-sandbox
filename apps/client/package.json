@@ -2,10 +2,8 @@
   "name": "@ate-apps/client",
   "type": "module",
   "scripts": {
-    "ng": "ng",
     "build": "ng build",
-    "start": "ng serve",
-    "start:ssr": "node ./dist/app/server/server.mjs",
+    "dev": "ng serve",
     "test": "jest --collect-coverage"
   },
   "dependencies": {
