@@ -3,25 +3,16 @@
   "version": 1,
   "projects": {
     "package": {
-      "prefix": "aspc",
       "projectType": "library",
       "root": ".",
-      "sourceRoot": "src",
+      "sourceRoot": "./src",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "ng-package.json"
-          },
-          "configurations": {
-            "development": {
-              "tsConfig": "tsconfig.lib.json"
-            },
-            "production": {
-              "tsConfig": "tsconfig.lib.prod.json"
-            }
-          },
-          "defaultConfiguration": "development"
+            "project": "./ng-package.json",
+            "tsConfig": "./tsconfig.lib.json"
+          }
         }
       }
     }

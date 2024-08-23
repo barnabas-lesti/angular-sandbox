@@ -1,4 +1,4 @@
 {
-  "extends": "@ate/tsconfig/packages/tsconfig.lib.json",
+  "extends": "@ate/tsconfig/tsconfig.lib.json",
   "exclude": ["**/*.spec.ts"]
 }

@@ -3,8 +3,8 @@
   "scripts": {
     "build": "ng build && rimraf dist/package.json"
   },
-  "module": "dist/fesm2022/ate-core.mjs",
-  "types": "dist/index.d.ts",
+  "module": "./dist/fesm2022/ate-core.mjs",
+  "types": "./dist/index.d.ts",
   "peerDependencies": {
     "@angular/common": "^18.2.0",
     "@angular/core": "^18.2.0"

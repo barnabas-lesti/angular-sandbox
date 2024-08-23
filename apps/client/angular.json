@@ -5,31 +5,30 @@
   "projects": {
     "app": {
       "projectType": "application",
+      "root": ".",
+      "sourceRoot": "./src",
       "schematics": {},
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/app",
-            "index": "src/index.html",
-            "browser": "src/index.client.ts",
+            "outputPath": "./dist/app",
+            "index": "./src/index.html",
+            "browser": "./src/index.client.ts",
             "polyfills": ["zone.js"],
-            "tsConfig": "tsconfig.app.json",
+            "tsConfig": "./tsconfig.app.json",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "src/public"
+                "input": "./src/public"
               }
             ],
-            "styles": ["src/index.css"],
+            "styles": ["./src/index.css"],
             "scripts": [],
-            "server": "src/index.server.ts",
+            "server": "./src/index.server.ts",
             "prerender": true,
             "ssr": {
-              "entry": "src/index.ssr.ts"
+              "entry": "./src/index.ssr.ts"
             }
           },
           "configurations": {

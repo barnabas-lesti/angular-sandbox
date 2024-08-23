@@ -1,4 +1,4 @@
 {
-  "extends": "@ate/tsconfig/apps/tsconfig.spec.json",
-  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"]
+  "extends": "@ate/tsconfig/tsconfig.spec.json",
+  "include": ["./src/**/*.spec.ts", "./src/**/*.d.ts"]
 }

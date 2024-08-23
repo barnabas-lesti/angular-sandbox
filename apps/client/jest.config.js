@@ -7,7 +7,7 @@ export default {
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
 
   coverageProvider: "v8",
-  collectCoverageFrom: ["src/**/*.ts", "!**/index.ts", "!**/*.d.ts"],
+  collectCoverageFrom: ["./src/**/*.ts", "!**/index.ts", "!**/*.d.ts"],
   coverageThreshold: {
     // global: {
     //   branches: 90,
