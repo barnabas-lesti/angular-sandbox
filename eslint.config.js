@@ -8,15 +8,13 @@ import eslintPluginJSDoc from "eslint-plugin-jsdoc";
 import eslintPluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import eslintPluginUnusedImports from "eslint-plugin-unused-imports";
 import path from "node:path";
-import { fileURLToPath } from "node:url";
 import typescriptEslint from "typescript-eslint";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const ignoreFilePath = path.resolve(__dirname, ".lintignore");
+const PROJECT_ID = "@ate";
+const IGNORE_FILE_PATH = path.resolve(process.cwd(), ".lintignore");
 
 export default typescriptEslint.config(
-  { ignores: includeIgnoreFile(ignoreFilePath).ignores },
+  { ignores: includeIgnoreFile(IGNORE_FILE_PATH).ignores },
   {
     files: ["**/*.js", "**/*.ts"],
     plugins: {
@@ -77,7 +75,7 @@ export default typescriptEslint.config(
       "simple-import-sort/imports": [
         "error",
         {
-          groups: [["^@?\\w"], [`^@as?\\w`], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
+          groups: [["^@?\\w"], [`^${PROJECT_ID}?\\w`], ["^\\./", "^\\.\\./"], ["^/"], ["^.+\\.(css|scss)([?].*)?$"]],
         },
       ],
       "simple-import-sort/exports": "error",

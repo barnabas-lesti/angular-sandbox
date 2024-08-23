@@ -1,6 +1,5 @@
-import { filter, Observable, of } from "rxjs";
-
 import { Injectable } from "@angular/core";
+import { filter, Observable, of } from "rxjs";
 
 console.debug("@ate/core", "platform.service.ts");
 
