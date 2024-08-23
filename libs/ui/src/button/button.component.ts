@@ -24,4 +24,8 @@ export class ButtonComponent implements OnInit, OnDestroy {
   ngOnDestroy(): void {
     console.debug("@ate-libs/ui", "ButtonComponent", "ngOnDestroy");
   }
+
+  onClick(): void {
+    console.debug("@ate-libs/ui", "ButtonComponent", "onClick");
+  }
 }

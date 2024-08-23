@@ -16,6 +16,7 @@
   ],
   "scripts": {
     "build": "turbo build",
+    "build:watch": "turbo build:watch",
     "dev": "turbo dev",
     "clean": "git clean -Xfd",
     "lint": "npm run lint.format -- --check && npm run lint.eslint",
@@ -23,6 +24,7 @@
     "lint.eslint": "eslint . --cache",
     "lint:fix": "npm run lint.format -- --write && npm run lint.eslint -- --fix",
     "start": "turbo start",
+    "start:ssr": "turbo start:ssr",
     "test": "turbo test"
   },
   "dependencies": {

@@ -3,8 +3,8 @@
   "type": "module",
   "scripts": {
     "build": "ng build",
-    "dev": "ng serve",
-    "start": "node ./dist/app/server/server.mjs",
+    "start": "ng serve",
+    "start:ssr": "node ./dist/app/server/server.mjs",
     "test": "jest --collect-coverage"
   },
   "dependencies": {

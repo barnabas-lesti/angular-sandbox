@@ -5,12 +5,17 @@
       "dependsOn": ["^build"],
       "outputs": ["./.angular/**", "./dist/**"]
     },
-    "dev": {
+    "build:watch": {
       "cache": false,
       "persistent": true,
       "dependsOn": ["^build"]
     },
     "start": {
+      "cache": false,
+      "persistent": true,
+      "dependsOn": ["^build"]
+    },
+    "start:ssr": {
       "cache": false,
       "persistent": true,
       "dependsOn": ["build"]

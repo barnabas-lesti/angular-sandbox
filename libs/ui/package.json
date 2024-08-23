@@ -2,7 +2,7 @@
   "name": "@ate-libs/ui",
   "scripts": {
     "build": "ng build",
-    "dev": "ng build --watch"
+    "build:watch": "ng build --watch"
   },
   "module": "./dist/fesm2022/ate-libs-ui.mjs",
   "types": "./dist/index.d.ts",
