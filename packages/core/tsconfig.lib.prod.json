@@ -1,9 +1,4 @@
 {
-  "extends": "./tsconfig.lib.json",
-  "compilerOptions": {
-    "declarationMap": false
-  },
-  "angularCompilerOptions": {
-    "compilationMode": "partial"
-  }
+  "extends": "@ate/tsconfig/packages/tsconfig.lib.prod.json",
+  "exclude": ["**/*.spec.ts"]
 }

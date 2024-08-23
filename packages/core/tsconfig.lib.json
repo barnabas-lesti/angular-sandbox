@@ -1,11 +1,4 @@
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "outDir": "./out-tsc/lib",
-    "declaration": true,
-    "declarationMap": true,
-    "inlineSources": true,
-    "types": []
-  },
+  "extends": "@ate/tsconfig/packages/tsconfig.lib.json",
   "exclude": ["**/*.spec.ts"]
 }

@@ -9,7 +9,9 @@
     "test": "jest --collect-coverage"
   },
   "dependencies": {
-    "@ate/core": "*",
+    "@ate/core": "*"
+  },
+  "devDependencies": {
     "@ate/tsconfig": "*"
   }
 }
