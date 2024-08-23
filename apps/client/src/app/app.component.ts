@@ -6,7 +6,7 @@ import { PlatformService } from "@ate-libs/core";
 console.debug("@ate/client", "app.component.ts");
 
 @Component({
-  selector: "asac-root",
+  selector: "app-root",
   standalone: true,
   imports: [],
   templateUrl: "./app.component.html",

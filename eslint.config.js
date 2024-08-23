@@ -16,7 +16,7 @@ const __dirname = path.dirname(__filename);
 const ignoreFilePath = path.resolve(__dirname, ".lintignore");
 
 export default typescriptEslint.config(
-  includeIgnoreFile(ignoreFilePath),
+  { ignores: includeIgnoreFile(ignoreFilePath).ignores },
   {
     files: ["**/*.js", "**/*.ts"],
     plugins: {
@@ -56,6 +56,22 @@ export default typescriptEslint.config(
 
       // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin/docs/rules
       "@angular-eslint/component-class-suffix": ["error", { suffixes: ["Component", "Container", "Page", "Modal"] }],
+      "@angular-eslint/directive-selector": [
+        "error",
+        {
+          type: "attribute",
+          prefix: "app",
+          style: "camelCase",
+        },
+      ],
+      "@angular-eslint/component-selector": [
+        "error",
+        {
+          type: "element",
+          prefix: "app",
+          style: "kebab-case",
+        },
+      ],
 
       // https://github.com/lydell/eslint-plugin-simple-import-sort
       "simple-import-sort/imports": [
@@ -79,27 +95,6 @@ export default typescriptEslint.config(
     rules: {
       // https://github.com/angular-eslint/angular-eslint/tree/main/packages/eslint-plugin-template/docs/rules
       "@angular-eslint/template/prefer-self-closing-tags": "error",
-    },
-  },
-  {
-    files: ["apps/client/**/*.ts"],
-    rules: {
-      "@angular-eslint/directive-selector": [
-        "error",
-        {
-          type: "attribute",
-          prefix: "asac",
-          style: "camelCase",
-        },
-      ],
-      "@angular-eslint/component-selector": [
-        "error",
-        {
-          type: "element",
-          prefix: "asac",
-          style: "kebab-case",
-        },
-      ],
     },
   },
   eslintConfigPrettier,
